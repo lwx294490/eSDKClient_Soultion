@@ -1,0 +1,45 @@
+// COM_eSDKSSO.idl : COM_eSDKSSO 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(COM_eSDKSSO.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+[
+	uuid(E7E8F538-F52D-402F-8D19-D858D56B4A32),
+	version(1.0),
+	helpstring("COM_eSDKSSO 1.0 类型库")
+]
+library COM_eSDKSSOLib
+{
+	importlib("stdole2.tlb");
+
+
+	[
+		object,
+		uuid(A0328A70-B1C9-4A3A-A6AC-3481FA805E64),
+		dual,
+		nonextensible,
+		helpstring("IComIdl_eSDKSSO 接口"),
+		pointer_default(unique)
+	]
+	interface IComIdl_eSDKSSO : IDispatch{
+		[id(1), helpstring("方法WriteToken")] HRESULT WriteToken([in] BSTR Credential);
+		[id(2), helpstring("方法ClearToken")] HRESULT ClearToken(void);	
+		[id(3), helpstring("方法GetToken")] HRESULT GetToken([out,retval] BSTR* Token);
+		[id(4), helpstring("方法SSOLogin")] HRESULT SSOLogin([in] BSTR name, [in] BSTR password, [in] BSTR SSOuri);
+	};
+
+
+	[
+		uuid(621FA462-0AB8-4564-8F9F-4D92486693E4),
+		helpstring("ComIdl_eSDKSSO Class")
+	]
+	coclass ComIdl_eSDKSSO
+	{
+		[default] interface IComIdl_eSDKSSO;
+	};
+};

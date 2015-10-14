@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "auth", "auth_v110\auth.vcxproj", "{714882D7-812C-4E4E-B8B2-28B9A34640A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{989748FA-243F-474B-9698-2F355E1B417F} = {989748FA-243F-474B-9698-2F355E1B417F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eSDKSSO", "eSDKSSO_v110\eSDKSSO.vcxproj", "{D1DB131A-7642-4A48-9683-4305A2510603}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C} = {2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eSDKTool", "eSDKTool_v110\eSDKTool.vcxproj", "{2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "COM_eSDKSSO", "COM_eSDKSSO_v110\COM_eSDKSSO.vcxproj", "{989748FA-243F-474B-9698-2F355E1B417F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D1DB131A-7642-4A48-9683-4305A2510603} = {D1DB131A-7642-4A48-9683-4305A2510603}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{714882D7-812C-4E4E-B8B2-28B9A34640A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{714882D7-812C-4E4E-B8B2-28B9A34640A2}.Debug|Win32.Build.0 = Debug|Win32
+		{714882D7-812C-4E4E-B8B2-28B9A34640A2}.Release|Win32.ActiveCfg = Release|Win32
+		{714882D7-812C-4E4E-B8B2-28B9A34640A2}.Release|Win32.Build.0 = Release|Win32
+		{D1DB131A-7642-4A48-9683-4305A2510603}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D1DB131A-7642-4A48-9683-4305A2510603}.Debug|Win32.Build.0 = Debug|Win32
+		{D1DB131A-7642-4A48-9683-4305A2510603}.Release|Win32.ActiveCfg = Release|Win32
+		{D1DB131A-7642-4A48-9683-4305A2510603}.Release|Win32.Build.0 = Release|Win32
+		{2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C}.Debug|Win32.Build.0 = Debug|Win32
+		{2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C}.Release|Win32.ActiveCfg = Release|Win32
+		{2DEC6D3C-20A3-43DF-90BE-5A95DB126D1C}.Release|Win32.Build.0 = Release|Win32
+		{989748FA-243F-474B-9698-2F355E1B417F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{989748FA-243F-474B-9698-2F355E1B417F}.Debug|Win32.Build.0 = Debug|Win32
+		{989748FA-243F-474B-9698-2F355E1B417F}.Release|Win32.ActiveCfg = Release|Win32
+		{989748FA-243F-474B-9698-2F355E1B417F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

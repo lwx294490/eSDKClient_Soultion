@@ -1,0 +1,14 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'COM_eSDKSSO'
+		{
+            val DllSurrogate = s ''
+        }
+		'COM_eSDKSSO.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

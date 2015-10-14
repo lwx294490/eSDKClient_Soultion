@@ -1,0 +1,355 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\eSDKClientDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\eSDKClientDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 eSDKClientDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "eSDKClientDemo，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_ESDKCLIENTDEMO_DIALOG DIALOGEX 0, 0, 302, 309
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "ServerInfo",IDC_STATIC_SRVINFO,18,16,264,86
+    GROUPBOX        "LoginInfo",IDC_STATIC_LOGININFO,18,147,264,109
+    LTEXT           "SSOUrl",IDC_STATIC_URL,30,34,22,8
+    LTEXT           "HostIP",IDC_STATIC_HOSTIP,30,51,22,8
+    LTEXT           "UpdateSrv",IDC_STATIC_UPDATESRV,30,68,34,8
+    EDITTEXT        IDC_EDIT_URL,80,31,188,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOSTIP,80,48,188,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UPDATESRV,80,65,188,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Init",IDC_BUTTON_INIT,22,112,50,19
+    PUSHBUTTON      "UnInit",IDC_BUTTON_UNINIT,227,112,50,19
+    LTEXT           "Name",IDC_STATIC_NAME,30,165,19,8
+    LTEXT           "Passwd",IDC_STATIC_PASSWD,30,187,24,8
+    LTEXT           "LoginType",IDC_STATIC_TYPE,30,209,34,8
+    LTEXT           "Token",IDC_STATIC_TOKEN,30,233,21,8
+    EDITTEXT        IDC_EDIT_NAME,80,163,188,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWD,80,186,188,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOKEN,79,230,188,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_TYPE,80,209,188,53,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Login_passwd",IDC_BUTTON_PASSWD,22,267,50,19
+    PUSHBUTTON      "Login_token",IDC_BUTTON_TOKEN,124,267,50,19
+    PUSHBUTTON      "Logout",IDC_BUTTON_LOGOUT,226,267,50,19
+    LTEXT           "UCSrvUrl",IDC_STATIC_UCURL,30,85,27,8
+    EDITTEXT        IDC_EDIT_UCURL,80,82,188,14,ES_AUTOHSCROLL
+END
+
+IDD_BASE_DIALOG DIALOGEX 0, 0, 178, 348
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_PHOTO,"Static",SS_BLACKFRAME,20,19,40,40
+    COMBOBOX        IDC_COMBO_STATE,91,47,66,83,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Account",IDC_STATIC_ACCOUNT,91,31,27,8
+    CONTROL         "",IDC_TREE_CONTACT,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,20,85,137,220
+    PUSHBUTTON      "BookConference",IDC_BUTTON_BOOKCONF,20,313,137,19
+    PUSHBUTTON      "Contact",IDC_BUTTON_CONTACT,20,72,50,14
+    PUSHBUTTON      "Group",IDC_BUTTON_GROUP,69,72,50,14
+    CONTROL         "",IDC_TREE_GROUP,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,20,85,137,220
+END
+
+IDD_RING_DIALOG DIALOGEX 0, 0, 197, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Accept",IDC_BUTTON_ACCEPT,19,66,54,19
+    PUSHBUTTON      "Reject",IDC_BUTTON_REJECT,125,66,54,19
+    PUSHBUTTON      "Forward",IDC_BUTTON_FORWARD,124,18,50,14
+    EDITTEXT        IDC_EDIT_FORWARD,21,18,101,14,ES_AUTOHSCROLL
+    CONTROL         158,IDC_STATIC_VIDEO,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_RIGHTJUST,79,38,40,24
+END
+
+IDD_INPUT_DIALOG DIALOGEX 0, 0, 185, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Please Input:",IDC_STATIC_INPUT,22,17,44,8
+    EDITTEXT        IDC_EDIT_INPUT,22,30,141,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_BUTTON_OK,22,57,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,113,57,50,14
+END
+
+IDD_BOOKCONF_DIALOG DIALOGEX 0, 0, 371, 205
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_BOOKCONF,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,20,20,332,133
+    PUSHBUTTON      "LeaveConference",IDC_BUTTON_LEAVE,278,168,74,19
+END
+
+IDD_CHAT_DIALOG DIALOGEX 0, 0, 509, 333
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Send",IDC_BUTTON_SEND,422,295,67,18
+    CONTROL         "",IDC_STATIC_LOCAL,"Static",SS_BLACKFRAME,166,236,100,82
+    CONTROL         "",IDC_STATIC_REMOTE,"Static",SS_BLACKFRAME,16,138,150,180
+    CONTROL         "",IDC_LIST_CONT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,58,250,80
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,180,33,42,19
+    PUSHBUTTON      "Hold",IDC_BUTTON_HOLD,16,15,40,14
+    PUSHBUTTON      "Resume",IDC_BUTTON_RESUME,56,15,40,14
+    PUSHBUTTON      "Hangup",IDC_BUTTON_HANGUP,224,33,42,19
+    PUSHBUTTON      "Call",IDC_BUTTON_CALL,180,12,42,19
+    PUSHBUTTON      "VideoCall",IDC_BUTTON_VIDEOCALL,224,12,42,19
+    LTEXT           "",IDC_STATIC_RECV,271,15,216,228,0,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SEND,274,250,216,41,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "MicMute",IDC_BUTTON_MICMUTE,16,36,40,14
+    PUSHBUTTON      "MicUnMute",IDC_BUTTON_MICUNMUTE,56,36,40,14
+    PUSHBUTTON      "SpkMute",IDC_BUTTON_SPKMUTE,96,36,40,14
+    PUSHBUTTON      "SpkUnMute",IDC_BUTTON_SPKUNMUTE,136,36,40,14
+    PUSHBUTTON      "StartRecord",IDC_BUTTON_OPENVIDEO,96,15,40,14
+    PUSHBUTTON      "EndRecord",IDC_BUTTON_CLOSEVIDEO,136,15,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "eSDKClientDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "eSDKClientDemo.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ESDKCLIENTDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_BASE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 341
+    END
+
+    IDD_RING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_INPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_BOOKCONF_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_CHAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 326
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BUSY         BITMAP                  "res\\busy.bmp"
+IDB_BITMAP_CALLMISS     BITMAP                  "res\\callMissed.bmp"
+IDB_BITMAP_COMPERE      BITMAP                  "res\\compere.bmp"
+IDB_BITMAP_CALLING      BITMAP                  "res\\confcallin.bmp"
+IDB_BITMAP_CALLEST      BITMAP                  "res\\confestablish.bmp"
+IDB_BITMAP_CALLLEAVE    BITMAP                  "res\\confleave.bmp"
+IDB_BITMAP_CONFMAN      BITMAP                  "res\\ConfMemMan.bmp"
+IDB_BITMAP_CONFWOMAN    BITMAP                  "res\\ConfMemWoman.bmp"
+IDB_BITMAP_FOLD         BITMAP                  "res\\fold.bmp"
+IDB_BITMAP_GROUP        BITMAP                  "res\\Group.bmp"
+IDB_BITMAP_LEAVE        BITMAP                  "res\\leave.bmp"
+IDB_BITMAP_MIC_MUTE     BITMAP                  "res\\MicMute.bmp"
+IDB_BITMAP_MIC_UNMUTE   BITMAP                  "res\\MicUnMute.bmp"
+IDB_BITMAP_NODISTURB    BITMAP                  "res\\nodisturb.bmp"
+IDB_BITMAP_OFFLINE      BITMAP                  "res\\offline.bmp"
+IDB_BITMAP_ONLINE       BITMAP                  "res\\online.bmp"
+IDB_BITMAP_SPEAKER      BITMAP                  "res\\speaking.bmp"
+IDB_BITMAP_UNFOLD       BITMAP                  "res\\unfold.bmp"
+IDB_BITMAP_VIDEO        BITMAP                  "res\\video.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 eSDKClientDemo(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\eSDKClientDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

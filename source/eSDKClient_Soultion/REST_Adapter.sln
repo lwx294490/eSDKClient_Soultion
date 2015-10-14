@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SSOAdapter", "SSOAdapter\SSOAdapter.vcxproj", "{8BCB6A50-E63E-4D1E-AEE6-275517309B8B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpdateAdapter", "UpdateAdapter\UpdateAdapter.vcxproj", "{1E856513-D7BD-4F53-B638-873B1D51B4C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BCB6A50-E63E-4D1E-AEE6-275517309B8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BCB6A50-E63E-4D1E-AEE6-275517309B8B}.Debug|Win32.Build.0 = Debug|Win32
+		{8BCB6A50-E63E-4D1E-AEE6-275517309B8B}.Release|Win32.ActiveCfg = Release|Win32
+		{8BCB6A50-E63E-4D1E-AEE6-275517309B8B}.Release|Win32.Build.0 = Release|Win32
+		{1E856513-D7BD-4F53-B638-873B1D51B4C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E856513-D7BD-4F53-B638-873B1D51B4C3}.Debug|Win32.Build.0 = Debug|Win32
+		{1E856513-D7BD-4F53-B638-873B1D51B4C3}.Release|Win32.ActiveCfg = Release|Win32
+		{1E856513-D7BD-4F53-B638-873B1D51B4C3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

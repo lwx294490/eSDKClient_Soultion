@@ -1,0 +1,24 @@
+HKCR
+{
+	COM_eSDKSSO.ComIdl_eSDKSSO.1 = s 'ComIdl_eSDKSSO Class'
+	{
+		CLSID = s '{621FA462-0AB8-4564-8F9F-4D92486693E4}'
+	}
+	COM_eSDKSSO.ComIdl_eSDKSSO = s 'ComIdl_eSDKSSO Class'
+	{
+		CLSID = s '{621FA462-0AB8-4564-8F9F-4D92486693E4}'
+		CurVer = s 'COM_eSDKSSO.ComIdl_eSDKSSO.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {621FA462-0AB8-4564-8F9F-4D92486693E4} = s 'ComIdl_eSDKSSO Class'
+		{
+			ProgID = s 'COM_eSDKSSO.ComIdl_eSDKSSO.1'
+			VersionIndependentProgID = s 'COM_eSDKSSO.ComIdl_eSDKSSO'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{E7E8F538-F52D-402F-8D19-D858D56B4A32}'
+		}
+	}
+}
